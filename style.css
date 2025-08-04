@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --orange-500: hsl(25, 97%, 53%);
+  --white: hsl(0, 100%, 100%);
+  --grey-500: hsl(217, 12%, 63%);
+  --grey-900: hsl(213, 19%, 18%);
+  --grey-950: hsl(216, 12%, 8%);
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--grey-950);
+  font-size: 62.5%;
+}
+
+main {
+  height: auto;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 420px;
+  padding: 1rem;
+}
+
+.rating-component {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: var(--grey-900);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.rating-image {
+  background-color: hsla(213, 9%, 24%, 0.5);
+  padding: 0.7rem;
+  border-radius: 50%;
+}
+
+.rating-heading {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.rating-feedback {
+  color: var(--grey-500);
+  font-size: 0.9rem;
+  font-weight: var(--fw-regular);
+}
+
+.rating-buttons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.rating-button {
+  background-color: hsla(213, 9%, 24%, 0.5);
+  padding: 0.9rem 1.1rem;
+  border-radius: 50%;
+  border: none;
+  font-size: 0.8rem;
+  color: var(--white);
+  font-weight: var(--fw-bold);
+  cursor: pointer;
+}
+
+.rating-button:hover {
+  background-color: var(--orange-500);
+  color: black;
+}
+
+.submit-button {
+  background-color: var(--orange-500);
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.8rem;
+  font-size: 0.8rem;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: var(--white);
+  color: black;
+}
+
+.submit-button .active {
+  background-color: var(--orange-500);
+  color: black;
+}
+
+.rating-thankyou-state {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: var(--grey-900);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.selection-text {
+  font-size: 0.9rem;
+  color: var(--orange-500);
+  font-weight: var(--fw-regular);
+  padding: 0.5rem 1.4rem;
+  background-color: hsla(213, 9%, 24%, 0.5);
+  border-radius: 1rem;
+  text-align: center
+}
+
+.thankyou-text{
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.thankyou-description {
+  color: var(--grey-500);
+  font-size: 0.9rem;
+  font-weight: var(--fw-regular);
+  text-align: center;
+}
+
+.hidden{
+  display: none;
+}
+
+
+
+
