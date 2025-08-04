@@ -14,24 +14,27 @@
   --fw-bold: 700;
 }
 
-html,
-body {
-  height: 100%;
+html, body {
+  min-height: 100%;
+  width: 100%;
   font-family: "Overpass", sans-serif;
+  display: flex;             
+  justify-content: center;    
+  align-items: center; 
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex;             
+  justify-content: center;    
+  align-items: center;        
   background-color: var(--grey-950);
   font-size: 62.5%;
+  overflow-y: auto;
 }
 
 main {
-  height: auto;
+  display: flex;
   flex-direction: column;
-  margin: 0 auto;
   max-width: 420px;
   padding: 1rem;
 }
@@ -43,6 +46,7 @@ main {
   background-color: var(--grey-900);
   border-radius: 1rem;
   padding: 2rem;
+  /* height: auto; */
 }
 
 .rating-image {
@@ -123,10 +127,10 @@ main {
   padding: 0.5rem 1.4rem;
   background-color: hsla(213, 9%, 24%, 0.5);
   border-radius: 1rem;
-  text-align: center
+  text-align: center; /* added missing semicolon */
 }
 
-.thankyou-text{
+.thankyou-text {
   color: var(--white);
   font-size: 1.5rem;
 }
@@ -138,10 +142,6 @@ main {
   text-align: center;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
-
-
-
-
